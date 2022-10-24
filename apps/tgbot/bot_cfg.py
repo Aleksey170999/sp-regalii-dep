@@ -9,7 +9,6 @@ load_dotenv()
 storage = MemoryStorage()
 
 API_TOKEN = os.getenv('BOT_TOKEN')
-print(API_TOKEN)
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot=bot, storage=storage)

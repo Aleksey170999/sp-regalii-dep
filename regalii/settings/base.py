@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
+load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
@@ -8,7 +10,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 INSTALLED_APPS = [
@@ -93,6 +95,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# STATIC_ROOT = 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -100,17 +103,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 GOOGLE_CREDENTIALS_FILE = BASE_DIR / 'credentials.json'
 
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_URL = '/media/'
 
 # # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # DEFAULT_FILE_STORAGE = 'sp_common_django.storage_backends.MyS3Boto3Storage'
-#
-# # TODO: вынести в переменные контейнера
-# AWS_S3_ENDPOINT_URL = 'https://storage.yandexcloud.net'
-# AWS_STORAGE_BUCKET_NAME = 'sp0'
-# AWS_S3_REGION_NAME = 'ru-central1'
-# AWS_LOCATION = 'regalia'
-# AWS_ACCESS_KEY_ID = 'FbRu2naAqrWT0qu-zFvd'
-# AWS_SECRET_ACCESS_KEY = 'vqSSJKab1msfPek5T1BPSkDmq5xGvxtIpT2HjQKw'
