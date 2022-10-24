@@ -1,1 +1,1 @@
-web: gunicorn regalii.wsgi
+web: gunicorn regalii.wsgi --log-file -
