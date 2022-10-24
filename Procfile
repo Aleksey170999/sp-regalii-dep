@@ -1,1 +1,1 @@
-web: gunicorn toilets.wsgi
+web: gunicorn regalii.wsgi
