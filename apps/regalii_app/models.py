@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.utils.timezone import now
 from django.db import models
 
@@ -36,4 +37,4 @@ class File(models.Model):
         return str(self.id)
 
     def get_zip_file_url(self):
-        return f"127.0.0.1:8000/media/{self.zip_file}"
+        return f"{settings.DOWNLOAD_URL}{self.zip_file}"
