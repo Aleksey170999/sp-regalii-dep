@@ -10,6 +10,8 @@ from bot_cfg import bot
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+DOMAIN_URL = 'https://regalii-app.herokuapp.com/'
+
 
 async def start_command(message: types.Message):
     await bot.send_message(chat_id=message.chat.id,
@@ -52,7 +54,7 @@ async def get_file(message: types.Message, state: FSMContext):
     destination = BASE_DIR / 'file.xlsx'
     await message.document.download(destination_file=destination)
     files = {'file': open(destination, 'rb')}
-    res = requests.post(url='http://127.0.0.1:8000/regals/', files=files)
+    res = requests.post(url=f'{DOMAIN_URL}regals/', files=files)
     await bot.send_message(chat_id=message.chat.id, text=res.json()['url'])
 
 
@@ -69,7 +71,7 @@ async def get_regalia(message: types.Message, state: FSMContext):
     data_json = {'regalia': full,
                  'city': city,
                  'fio': fio}
-    res = requests.post(url='http://127.0.0.1:8000/regals/', data=data_json)
+    res = requests.post(url=f'{DOMAIN_URL}regals/', data=data_json)
     await bot.send_message(chat_id=message.chat.id, text=res.json()['url'])
     await start_command(message)
 
