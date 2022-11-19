@@ -10,7 +10,8 @@ from bot_cfg import bot
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DOMAIN_URL = 'https://regalii-app.herokuapp.com/'
+# DOMAIN_URL = 'https://regalii-app.herokuapp.com/'
+DOMAIN_URL = 'http://127.0.0.1:8000/'
 
 
 async def start_command(message: types.Message):

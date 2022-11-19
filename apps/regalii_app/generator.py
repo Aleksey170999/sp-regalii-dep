@@ -17,7 +17,8 @@ class RegaliaGenerator:
 
     def generate_one(self, ins):
         for size in self.sizes:
-            font = ImageFont.truetype('apps/regalii_app/helios.ttf', 23, encoding="utf-8") if size == (315, 177) else ImageFont.truetype('apps/regalii_app/helios.ttf', 19, encoding="utf-8")
+            font = ImageFont.truetype('apps/regalii_app/helios.ttf', 23, encoding="utf-8") if size == (
+                315, 177) else ImageFont.truetype('apps/regalii_app/helios.ttf', 19, encoding="utf-8")
             im = Image.new('RGB', size, (232, 243, 249))
             self.generate_png(im=im, ins=ins, font=font, size=size)
 
@@ -102,6 +103,8 @@ class RegaliaGenerator:
             i = -27 if size == (315, 177) else -22
 
             for str in text.split("\n"):
+                if 'None' in str:
+                    str = str[0:-4]
                 draw.text(
                     font=font,
                     xy=(size[0] / 2, size[1] / 2 + i),
@@ -153,7 +156,8 @@ class RegaliaGenerator:
             i = 3
         if im.size == (320, 80):
             i = 4
-        name = f'{data["sec_name"]}_{data["fir_name"][0]}{data["thi_name"][0]}_{i}.png' if data["thi_name"] else f'{data["sec_name"]}_{data["fir_name"][0]}_{i}.png'
+        name = f'{data["sec_name"]}_{data["fir_name"][0]}{data["thi_name"][0]}_{i}.png' if data[
+            "thi_name"] else f'{data["sec_name"]}_{data["fir_name"][0]}_{i}.png'
         im.save(path + name)
 
     def save_to_archive(self):

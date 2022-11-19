@@ -12,5 +12,5 @@ COPY . /app
 
 EXPOSE 8000
 CMD ["python", "manage.py", "migrate"]
-CMD ["python", "apps/tgbot/bot.py"]
+#CMD ["python", "apps/tgbot/bot.py"]
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

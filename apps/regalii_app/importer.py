@@ -13,12 +13,13 @@ from .models import Regalia, Operation
 class RegaliaImporter():
     # excel = pd.read_excel('regs.xlsx', 'Доделать_25.08')
     _scope = ['https://www.googleapis.com/auth/spreadsheets']
-    _book_name = 'Sheet1'
+    _book_name = 'Лист8'
     _sheet_id = '11oyFJ_wKGDaR9kS-0_ThSH-K6htguHHbgekiUf49OQg'  # Все
 
-    def __init__(self, ins=None, file=None):
+    def __init__(self, ins=None, file=None, f=None):
         self.ins = ins
         self.file = file
+        self.f = f
         creds = None
         if os.path.exists('token.json'):
             creds = Credentials.from_authorized_user_file('token.json', self._scope)
@@ -36,7 +37,7 @@ class RegaliaImporter():
     def get_values(self):
         service = build('sheets', 'v4', credentials=self.creds)
         sheet = service.spreadsheets()
-        result = sheet.values().get(spreadsheetId=self._sheet_id, range="ШЭГ!A2:C400").execute()
+        result = sheet.values().get(spreadsheetId=self._sheet_id, range=f"FV пп!A{self.f}:C400").execute()
         values = result.get('values', [])
 
         return values
@@ -91,47 +92,53 @@ class RegaliaImporter():
         operation = Operation.objects.create()
 
         for ins in values:
-            print(f"Импортирую: {ins[0]}")
-            rank = ''
-            en_regalia = ''
-
-            if '[' in ins[2]:
-                s = ins[2].split('[')
-                regalia = s[0].strip()
-                en_regalia = "[" + s[1]
-                city = f"{regalia.split('(')[1].strip()[:-1]}"
-                fio = ins[0]
-                spl_fio = fio.split()
-                first_name = spl_fio[1]
-                second_name = spl_fio[0]
-                thi_name = spl_fio[2] if len(spl_fio) > 2 else ''
-                rank = f"{regalia.split(ins[0])[0].strip()}" if regalia.split(ins[0])[0] != '' else ''
-            else:
-                regalia = ins[2]
-                fio = ins[0]
-                spl_fio = fio.split()
-                first_name = spl_fio[1]
-                second_name = spl_fio[0]
-                thi_name = spl_fio[2] if len(spl_fio) > 2 else ''
-                city = f"{regalia.split('(')[1].strip()[:-1]}"
-                rank = f"{regalia.split(ins[0])[0].strip()}" if regalia.split(ins[0])[0] != '' else ''
-
             try:
-                Regalia.objects.create(full_name=fio,
-                                       first_name=first_name,
-                                       second_name=second_name,
-                                       third_name=thi_name,
-                                       rank=str(rank),
-                                       city=str(city),
-                                       regalia=regalia,
-                                       en_regalia=en_regalia,
-                                       operation=operation).save()
-            except IntegrityError:
-                print("---ОШИБКА: Данные уже записаны в базу, пропускаю...")
-                continue
-            counter += 1
+                print(f"Импортирую: {ins[0]}")
 
-            print(f"Импортировано: {ins[0]}")
+                rank = ''
+                en_regalia = ''
+
+                if '[' in ins[2]:
+                    s = ins[2].split('[')
+                    regalia = s[0].strip()
+                    en_regalia = "[" + s[1]
+                    city = f"{regalia.split('(')[1].strip()[:-1]}"
+                    fio = ins[0]
+                    spl_fio = fio.split()
+                    first_name = spl_fio[1]
+                    second_name = spl_fio[0]
+                    thi_name = spl_fio[2] if len(spl_fio) > 2 else ''
+                    rank = f"{regalia.split(ins[0])[0].strip()}" if regalia.split(ins[0])[0] != '' else ''
+                else:
+                    regalia = ins[2]
+                    fio = ins[0]
+                    spl_fio = fio.split()
+                    first_name = spl_fio[1]
+                    second_name = spl_fio[0]
+                    thi_name = spl_fio[2] if len(spl_fio) > 2 else ''
+                    city = f"{regalia.split('(')[1].strip()[:-1]}"
+                    rank = f"{regalia.split(ins[0])[0].strip()}" if regalia.split(ins[0])[0] != '' else ''
+
+                try:
+                    Regalia.objects.create(full_name=fio,
+                                           first_name=first_name,
+                                           second_name=second_name,
+                                           third_name=thi_name,
+                                           rank=str(rank),
+                                           city=str(city),
+                                           regalia=regalia,
+                                           en_regalia=en_regalia,
+                                           operation=operation).save()
+                except IntegrityError:
+                    print("---ОШИБКА: Данные уже записаны в базу, пропускаю...")
+                    continue
+            except IndexError:
+                pass
+            counter += 1
+            try:
+                print(f"Импортировано: {ins[0]}")
+            except IndexError:
+                pass
         print("\n" + f"Импортировано {counter} регалий")
 
     def import_from_excel(self):

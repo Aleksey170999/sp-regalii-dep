@@ -108,7 +108,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_URL = '/media/'
-DOWNLOAD_URL = 'https://regalii-app.herokuapp.com/media/'
+# DOWNLOAD_URL = 'https://regalii-app.herokuapp.com/media/'
+DOWNLOAD_URL = 'http://127.0.0.1:8000/media/'
 DOMAIN_URL = 'https://regalii-app.herokuapp.com/'
 HEROKU_URL = 'https://regalii-app.herokuapp.com/'
 # DEFAULT_FILE_STORAGE = 'sp_common_django.storage_backends.MyS3Boto3Storage'
