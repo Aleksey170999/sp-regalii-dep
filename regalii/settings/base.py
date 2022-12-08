@@ -1,18 +1,17 @@
-import os
 from pathlib import Path
 from dotenv import load_dotenv
+from dotenv import dotenv_values
 
+config = dotenv_values(".env")
 load_dotenv()
+
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-
-SECRET_KEY = 'django-insecure-&i(%@y)_u9c6wdoir8vgq2cgt1ey3h1a-b9d3ky-rvlipdmvyg'
-
+SECRET_KEY = config['DJANGO_SECRET_KEY']
 
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -60,14 +59,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'regalii.wsgi.application'
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -84,7 +81,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -93,23 +89,26 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 STATIC_URL = 'static/'
 
 STATIC_ROOT = 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Все относящееся к гугловской авторизации:
-
+# GoogleAuth credentials
 GOOGLE_CREDENTIALS_FILE = BASE_DIR / 'credentials.json'
-
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_URL = '/media/'
 # DOWNLOAD_URL = 'https://regalii-app.herokuapp.com/media/'
-DOWNLOAD_URL = 'http://127.0.0.1:8000/media/'
 DOMAIN_URL = 'https://regalii-app.herokuapp.com/'
 HEROKU_URL = 'https://regalii-app.herokuapp.com/'
-# DEFAULT_FILE_STORAGE = 'sp_common_django.storage_backends.MyS3Boto3Storage'
+# YANDEX_CLOUD SETTINGS
+AWS_ACCESS_KEY_ID = config['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY = config['AWS_SECRET_ACCESS_KEY']
+SERVICE_NAME = config['SERVICE_NAME']
+ENDPOINT_URL = config['ENDPOINT_URL']
+REGION_NAME = config['REGION_NAME']
+
+TG_BOT_TOKEN = config['BOT_TOKEN']
