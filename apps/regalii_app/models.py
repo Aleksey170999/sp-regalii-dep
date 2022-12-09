@@ -1,4 +1,3 @@
-from django.conf import settings
 from django.utils.timezone import now
 from django.db import models
 
@@ -14,10 +13,6 @@ class Regalia(models.Model):
     regalia = models.CharField('Регалия', max_length=512, blank=True)
     comments = models.TextField('Комментарии', blank=True)
     operation = models.ForeignKey('Operation', on_delete=models.CASCADE, null=True, blank=True)
-    # is_en = models.BooleanField(default=False, null=True)
-
-    # class Meta:
-    #     unique_together = [['full_name', 'rank', 'regalia']]
 
     def __str__(self):
         return str(self.id)
@@ -28,13 +23,3 @@ class Operation(models.Model):
 
     def __str__(self):
         return str(self.id)
-
-
-class File(models.Model):
-    zip_file = models.FileField(upload_to='zip', blank=True, null=True)
-
-    def __str__(self):
-        return str(self.id)
-
-    def get_zip_file_url(self):
-        return f"{settings.DOWNLOAD_URL}{self.zip_file}"

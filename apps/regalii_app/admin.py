@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Regalia, Operation, File
+from .models import Regalia, Operation
 
 
 class RegaliaAdmin(admin.ModelAdmin):
@@ -9,4 +9,3 @@ class RegaliaAdmin(admin.ModelAdmin):
 
 admin.site.register(Regalia, RegaliaAdmin)
 admin.site.register(Operation)
-admin.site.register(File)

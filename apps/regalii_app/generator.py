@@ -3,8 +3,11 @@ import os
 from pathlib import Path
 import zipfile
 from PIL import Image, ImageDraw, ImageFont
-from .models import Regalia, File
+from django.conf import settings
+
+from .models import Regalia
 from django.core.files import File as f
+import boto3
 
 
 class RegaliaGenerator:
@@ -174,8 +177,17 @@ class RegaliaGenerator:
         return archname
 
     def get_url_to_archive(self, archname):
-        file_ins = File.objects.create()
-        file = f(open(f'apps/regalii_app/generated/{archname}', 'rb'))
-        file_ins.zip_file.save('regalii.zip', file)
+        file = f'apps/regalii_app/generated/{archname}'
 
-        return file_ins.get_zip_file_url()
+        s3 = boto3.client(service_name=settings.SERVICE_NAME,
+                          region_name=settings.REGION_NAME,
+                          aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
+                          aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY,
+                          endpoint_url=settings.ENDPOINT_URL)
+
+        s3.upload_file(file, 'sp-at', f'regalii/{archname}')
+        url = s3.generate_presigned_url('get_object',
+                                        Params={'Bucket': 'sp-at',
+                                                'Key': f'regalii/{archname}'})
+        return url
+
