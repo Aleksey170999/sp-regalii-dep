@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc611ea2-0995-4d8f-8765-d36a49bde6ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/new_backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/token.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -230,7 +231,7 @@
       <workItem from="1670317880231" duration="551000" />
       <workItem from="1670325704528" duration="22975000" />
       <workItem from="1670514740373" duration="4344000" />
-      <workItem from="1670576692840" duration="1543000" />
+      <workItem from="1670576692840" duration="1736000" />
     </task>
     <servers />
   </component>
