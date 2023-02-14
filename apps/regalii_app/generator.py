@@ -5,8 +5,6 @@ import zipfile
 from PIL import Image, ImageDraw, ImageFont
 from django.conf import settings
 
-from .models import Regalia
-from django.core.files import File as f
 import boto3
 
 
@@ -26,8 +24,11 @@ class RegaliaGenerator:
             self.generate_png(im=im, ins=ins, font=font, size=size)
 
     def generate_all(self):
+        counter = 0
         for ins in self.qs:
             self.generate_one(ins)
+            counter += 1
+        print(counter)
 
     def generate_png(self, im, ins, font, size):
         draw = ImageDraw.Draw(im)
@@ -46,22 +47,39 @@ class RegaliaGenerator:
         en_regalia = data['en_regalia']
         ru_regalia = data['ru_regalia']
         text = ''
+        print(data)
         if rank == "":
+            # На случай фамилий из двух слов без тире
+            # text = f"{rank} {fio.split()[0]}" + "\n" + f"{' '.join(fio.split()[1:])}" + "\n" + f"({city})"
+
             text = f"{sec_name}" + "\n" + f"{fir_name} {thi_name}" + "\n" + f"({city})"
         else:
-            if len(rank) <= 16:
+            if 3 <= len(rank) <= 16:
                 if thi_name is not None:
-                    text = f"{rank} {fio.split()[0]}" + "\n" + f"{fio.split()[1]} {fio.split()[2]}" + "\n" + f"({city})"
+                    if len(sec_name) >= 15:
+                        text = f"{rank}" + "\n" + f"{fio.split()[0]}" + "\n" + f"{fio.split()[1]} {fio.split()[2]}" + "\n" + f"({city})"
+                    else:
+                        # На случай фамилий из двух слов без тире
+                        # text = f"{rank} {fio.split()[0]}" + "\n" + f"{' '.join(fio.split()[1:])}" + "\n" + f"({city})"
+
+                        text = f"{rank} {fio.split()[0]}" + "\n" + f"{fio.split()[1]} {fio.split()[2]}" + "\n" + f"({city})"
                 else:
                     if en_regalia:
                         text = f"{rank + ' ' + fio}" + "\n" + f"({city})" + "\n" + f"{en_regalia.split('(')[0].strip()}" + "\n" + f"({en_regalia.split('(')[1]}"
                     else:
                         text = f"{rank}" + "\n" + f"{fio}" + "\n" + f"({city})"
-            if 17 <= len(rank) <= 39:
+            if 17 <= len(rank) <= 30:
                 if thi_name is not None:
                     text = f"{rank}" + "\n" + f"{fio.split()[0]}" + "\n" + f"{fio.split()[1]} {fio.split()[2]}" + "\n" + f"({city})"
                 else:
                     text = f"{rank}" + "\n" + f"{fio.split()[0]} {fio.split()[1]}" + "\n" + f"{city}"
+
+            if 31 <= len(rank) < 40:
+                if thi_name is not None:
+                    text = f"{rank.split(',')[0]}," + "\n" + f"{','.join(rank.split(',')[1:])}" + "\n" + f"{fio}" + "\n" + f"({city})"
+                else:
+                    text = f"{rank}" + "\n" + f"{fio.split()[0]} {fio.split()[1]}" + "\n" + f"{city}"
+
             if len(rank) >= 40:
                 if thi_name is not None:
                     text = f"{rank.split(',')[0]}," + "\n" + f"{rank.split(',')[1]}," + f"{rank.split(',')[2]}" + "\n" + f"{fio}" + "\n" + f"({city})"
@@ -161,6 +179,9 @@ class RegaliaGenerator:
             i = 4
         name = f'{data["sec_name"]}_{data["fir_name"][0]}{data["thi_name"][0]}_{i}.png' if data[
             "thi_name"] else f'{data["sec_name"]}_{data["fir_name"][0]}_{i}.png'
+        if name in os.listdir(self.REGALII_DIR):
+            name = f'{data["sec_name"]}_{data["fir_name"][0]}{data["thi_name"][0]}_{i}.png' if data[
+            "thi_name"] else f'{data["sec_name"]}_{data["fir_name"][0]}_{i}_.png'
         im.save(path + name)
 
     def save_to_archive(self):

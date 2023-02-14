@@ -37,10 +37,11 @@ class RegaliaImporter():
     def get_values(self):
         service = build('sheets', 'v4', credentials=self.creds)
         sheet = service.spreadsheets()
-        result = sheet.values().get(spreadsheetId=self._sheet_id, range=f"FV пп!A{self.f}:C400").execute()
+        result = sheet.values().get(spreadsheetId=self._sheet_id, range=f"ДОП СПБ-23!A{self.f}:C400").execute()
         values = result.get('values', [])
 
         return values
+
 
     def import_one_object(self):
         operation = Operation.objects.create()
@@ -149,7 +150,7 @@ class RegaliaImporter():
             print(f"Импортирую: {ins[0]}")
             rank = ''
             en_regalia = ''
-
+            print(ins)
             if '[' in ins[2]:
                 s = ins[2].split('[')
                 regalia = s[0].strip()

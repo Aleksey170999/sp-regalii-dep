@@ -25,18 +25,21 @@ INSTALLED_APPS = [
     'apps.g_auth_app.apps.GAuthAppConfig',
 
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+
+    "corsheaders.middleware.CorsMiddleware",
+
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'regalii.urls'
@@ -97,6 +100,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # GoogleAuth credentials
 GOOGLE_CREDENTIALS_FILE = BASE_DIR / 'credentials.json'
+
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = BASE_DIR / "media"
@@ -112,3 +117,7 @@ ENDPOINT_URL = config['ENDPOINT_URL']
 REGION_NAME = config['REGION_NAME']
 
 TG_BOT_TOKEN = config['BOT_TOKEN']
+
+#  CORS SETTINGS
+
+CORS_ORIGIN_ALLOW_ALL = True

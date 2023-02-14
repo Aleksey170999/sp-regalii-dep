@@ -10,7 +10,6 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         if options["f"]:
-            print(options['f'])
             importer = RegaliaImporter(f=options["f"])
             importer.import_objects()
         else:

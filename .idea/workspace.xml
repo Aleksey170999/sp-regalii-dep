@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bc611ea2-0995-4d8f-8765-d36a49bde6ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/new_backend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/file.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/regalii_app/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/regalii_app/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/importer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/regalii_app/management/commands/import.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/management/commands/import.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/regalii_app/regs.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/regalii_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/tgbot/bot_kb.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tgbot/bot_kb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/tgbot/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tgbot/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_4Ai2d5m.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_K227Bly.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_LKPnsDV.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_PGtxlD5.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_RJkbvWC.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_TavUMZe.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_g1ySi1a.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_hJPK6Cj.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_ifL4BC2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_lNX3ig4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_m8Yy9hS.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_mMYeY9H.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_nvDSvbs.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_onpmAvO.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/zip/regalii_xjkgtME.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/regalii/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/regalii/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/token.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +72,11 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/aleksejtihonov/Desktop/SP/regalii/new_backend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -76,6 +106,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/tgbot/handlers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="new_backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/regalii_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/regalii_app/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,16 +229,17 @@
       <item itemvalue="Django Server.new_backend" />
       <item itemvalue="Python.tg_bot" />
       <item itemvalue="Python.request" />
+      <item itemvalue="Python.main" />
       <item itemvalue="Python.some" />
       <item itemvalue="Python.handlers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.handlers" />
         <item itemvalue="Python.some" />
         <item itemvalue="Python.handlers" />
         <item itemvalue="Python.some" />
-        <item itemvalue="Python.handlers" />
       </list>
     </recent_temporary>
   </component>
@@ -232,6 +285,19 @@
       <workItem from="1670325704528" duration="22975000" />
       <workItem from="1670514740373" duration="4344000" />
       <workItem from="1670576692840" duration="1736000" />
+      <workItem from="1670583126856" duration="37000" />
+      <workItem from="1670583173369" duration="10526000" />
+      <workItem from="1671193158830" duration="3218000" />
+      <workItem from="1671439370034" duration="20545000" />
+      <workItem from="1671610811124" duration="20194000" />
+      <workItem from="1673250190020" duration="694000" />
+      <workItem from="1673516002823" duration="567000" />
+      <workItem from="1673968704745" duration="155000" />
+      <workItem from="1673969398273" duration="173000" />
+      <workItem from="1675082643114" duration="109000" />
+      <workItem from="1675841022781" duration="406000" />
+      <workItem from="1676033464884" duration="4016000" />
+      <workItem from="1676351293131" duration="6258000" />
     </task>
     <servers />
   </component>
@@ -254,8 +320,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/new_backend$request.coverage" NAME="request Coverage Results" MODIFIED="1665414290519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/regalii_app" />
-    <SUITE FILE_PATH="coverage/new_backend$handlers.coverage" NAME="handlers Coverage Results" MODIFIED="1666701976036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/tgbot" />
+    <SUITE FILE_PATH="coverage/new_backend$tg_bot.coverage" NAME="tg_bot Coverage Results" MODIFIED="1676381204408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/tgbot" />
     <SUITE FILE_PATH="coverage/new_backend$some.coverage" NAME="some Coverage Results" MODIFIED="1670404972004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/new_backend$tg_bot.coverage" NAME="tg_bot Coverage Results" MODIFIED="1670577640146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/tgbot" />
+    <SUITE FILE_PATH="coverage/new_backend$main.coverage" NAME="main Coverage Results" MODIFIED="1670663026300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/regalii_app" />
+    <SUITE FILE_PATH="coverage/new_backend$handlers.coverage" NAME="handlers Coverage Results" MODIFIED="1666701976036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/tgbot" />
   </component>
 </project>

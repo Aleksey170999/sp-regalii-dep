@@ -1,16 +1,10 @@
-FROM python:3.10
+FROM python:3
 
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+COPY requirements.txt /.
 
-WORKDIR /app
-
-COPY ./requirements.txt .
 RUN pip install -r requirements.txt
-COPY . /app
 
+ADD . /.
+WORKDIR /.
 
-EXPOSE 8000
-CMD ["python", "manage.py", "migrate"]
-#CMD ["python", "apps/tgbot/bot.py"]
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

@@ -5,7 +5,6 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from .importer import RegaliaImporter
 from .generator import RegaliaGenerator
-from .models import Operation, Regalia
 
 
 @csrf_exempt
