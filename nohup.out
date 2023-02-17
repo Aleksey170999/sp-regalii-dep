@@ -1250,3 +1250,246 @@ Traceback (most recent call last):
     fio = regalia[1].strip()
 IndexError: list index out of range
 [17/Feb/2023 06:27:59] "POST /regals/ HTTP/1.1" 200 374
+python: can't open file 'apps/tgbot/bot': [Errno 2] No such file or directory
+INFO:aiogram:Bot: regalii_bot [@regalii_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 77, in get_regalia
+    city = regalia[2].strip()
+IndexError: list index out of range
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+Not Found: /
+[17/Feb/2023 06:42:25] "GET / HTTP/1.1" 404 2369
+Not Found: /favicon.ico
+[17/Feb/2023 06:42:25] "GET /favicon.ico HTTP/1.1" 404 2420
+{'fio': 'Полякова Анна Александровна', 'rank': 'Канд. мед. наук', 'city': 'Курск', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна (Курск)'}
+{'fio': 'Полякова Анна Александровна', 'rank': 'Канд. мед. наук', 'city': 'Курск', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна (Курск)'}
+Импортирую: Шкитин Сергей Олегович
+Импортировано: Шкитин Сергей Олегович
+{'fio': 'Шкитин Сергей Олегович', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Сергей', 'sec_name': 'Шкитин', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Шкитин Сергей Олегович (Москва)'}
+{'fio': 'Шкитин Сергей Олегович', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Сергей', 'sec_name': 'Шкитин', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Шкитин Сергей Олегович (Москва)'}
+{'fio': 'Шкитин Сергей Олегович', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Сергей', 'sec_name': 'Шкитин', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Шкитин Сергей Олегович (Москва)'}
+{'fio': 'Шкитин Сергей Олегович', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Сергей', 'sec_name': 'Шкитин', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Шкитин Сергей Олегович (Москва)'}
+Импортирую: Шкитин Сергей Олегович
+Импортировано: Шкитин Сергей Олегович
+{'fio': 'Шкитин Сергей Олегович', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Сергей', 'sec_name': 'Шкитин', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Шкитин Сергей Олегович (Москва)'}
+{'fio': 'Шкитин Сергей Олегович', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Сергей', 'sec_name': 'Шкитин', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Шкитин Сергей Олегович (Москва)'}
+{'fio': 'Шкитин Сергей Олегович', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Сергей', 'sec_name': 'Шкитин', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Шкитин Сергей Олегович (Москва)'}
+{'fio': 'Шкитин Сергей Олегович', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Сергей', 'sec_name': 'Шкитин', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Шкитин Сергей Олегович (Москва)'}
+Импортирую: Сахарова Виктория Владиславовна
+Импортировано: Сахарова Виктория Владиславовна
+{'fio': 'Сахарова Виктория Владиславовна', 'rank': 'Канд. мед. наук', 'city': 'Санкт-Петербург', 'fir_name': 'Виктория', 'sec_name': 'Сахарова', 'thi_name': 'Владиславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Сахарова Виктория Владиславовна (Санкт-Петербург)'}
+{'fio': 'Сахарова Виктория Владиславовна', 'rank': 'Канд. мед. наук', 'city': 'Санкт-Петербург', 'fir_name': 'Виктория', 'sec_name': 'Сахарова', 'thi_name': 'Владиславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Сахарова Виктория Владиславовна (Санкт-Петербург)'}
+{'fio': 'Сахарова Виктория Владиславовна', 'rank': 'Канд. мед. наук', 'city': 'Санкт-Петербург', 'fir_name': 'Виктория', 'sec_name': 'Сахарова', 'thi_name': 'Владиславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Сахарова Виктория Владиславовна (Санкт-Петербург)'}
+{'fio': 'Сахарова Виктория Владиславовна', 'rank': 'Канд. мед. наук', 'city': 'Санкт-Петербург', 'fir_name': 'Виктория', 'sec_name': 'Сахарова', 'thi_name': 'Владиславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Сахарова Виктория Владиславовна (Санкт-Петербург)'}
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+Watching for file changes with StatReloader
+INFO:aiogram:Bot: regalii_bot [@regalii_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+Not Found: /
+[17/Feb/2023 06:53:27] "GET / HTTP/1.1" 404 2369
+Not Found: /
+[17/Feb/2023 06:53:28] "GET / HTTP/1.1" 404 2369
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 77, in get_regalia
+    city = regalia[2].strip()
+IndexError: list index out of range
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: regalii_bot [@regalii_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+[17/Feb/2023 06:55:27] "POST /regals/ HTTP/1.1" 200 374

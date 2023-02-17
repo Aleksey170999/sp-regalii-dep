@@ -73,8 +73,8 @@ async def get_regalia(message: types.Message, state: FSMContext):
         city = regalia[2].strip()
     else:
         rank = ""
-        fio = regalia[1].strip()
-        city = regalia[2].strip()
+        fio = regalia[0].strip()
+        city = regalia[1].strip()
 
     full = f"{rank} {fio} ({city})"
     data_json = {'regalia': full,
