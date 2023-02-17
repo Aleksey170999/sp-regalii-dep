@@ -1,0 +1,12 @@
+[0;1;31m●[0m regalii.service - nginxtutorial daemon
+     Loaded: loaded (/etc/systemd/system/regalii.service; disabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Tue 2023-02-14 20:07:43 MSK; 25s ago
+TriggeredBy: [0;1;32m●[0m regalii.socket
+    Process: 469789 ExecStart=/home/sp-regalii-dep/venv/bin/gunicorn --workers 3 --bind unix:/run/regalii.sock config.wsgi:application [0;1;31m(code=exited, status=203/EXEC)[0m
+   Main PID: 469789 (code=exited, status=203/EXEC)
+
+Feb 14 20:07:43 134-0-113-174.cloudvps.regruhosting.ru systemd[1]: Started nginxtutorial daemon.
+Feb 14 20:07:43 134-0-113-174.cloudvps.regruhosting.ru systemd[469789]: [0;1;31m[0;1;39m[0;1;31mregalii.service: Failed to execute command: No such file or directory[0m
+Feb 14 20:07:43 134-0-113-174.cloudvps.regruhosting.ru systemd[469789]: [0;1;31m[0;1;39m[0;1;31mregalii.service: Failed at step EXEC spawning /home/sp-regalii-dep/venv/bin/gunicorn: No such file or directory[0m
+Feb 14 20:07:43 134-0-113-174.cloudvps.regruhosting.ru systemd[1]: [0;1;39m[0;1;31m[0;1;39mregalii.service: Main process exited, code=exited, status=203/EXEC[0m
+Feb 14 20:07:43 134-0-113-174.cloudvps.regruhosting.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mregalii.service: Failed with result 'exit-code'.[0m

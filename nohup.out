@@ -1,0 +1,1252 @@
+INFO:aiogram:Bot: regalii_bot [@regalii_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+Watching for file changes with StatReloader
+Not Found: /
+[14/Feb/2023 17:38:58] "GET / HTTP/1.1" 404 2369
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 14, 2023 - 17:38:58
+Django version 4.1.7, using settings 'regalii.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+INFO:aiogram:Bot: regalii_bot [@regalii_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+Watching for file changes with StatReloader
+Not Found: /
+[14/Feb/2023 17:40:32] "GET / HTTP/1.1" 404 2369
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 14, 2023 - 17:40:30
+Django version 4.1.7, using settings 'regalii.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: regalii_bot [@regalii_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+Internal Server Error: /regals/
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/sp-regalii-dep/apps/regalii_app/views.py", line 19, in genreg
+    generator.generate_one(ins=ins)
+  File "/home/sp-regalii-dep/apps/regalii_app/generator.py", line 24, in generate_one
+    self.generate_png(im=im, ins=ins, font=font, size=size)
+  File "/home/sp-regalii-dep/apps/regalii_app/generator.py", line 38, in generate_png
+    self.save_png(data, im)
+  File "/home/sp-regalii-dep/apps/regalii_app/generator.py", line 182, in save_png
+    if name in os.listdir(self.REGALII_DIR):
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sp-regalii-dep/apps/regalii_app/generated'
+[14/Feb/2023 17:42:02] "POST /regals/ HTTP/1.1" 500 112356
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=JSONDecodeError('Expecting value: line 1 column 1 (char 0)')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 78, in get_regalia
+    await bot.send_message(chat_id=message.chat.id, text=f"Ваши регалии готовы, скачивайте: {res.json()['url']}\n\nначинаем сначала!")
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 14, 2023 - 17:40:47
+Django version 4.1.7, using settings 'regalii.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Импортирую: Вальденберг Алексей Владимирович
+Импортировано: Вальденберг Алексей Владимирович
+{'fio': 'Вальденберг Алексей Владимирович', 'rank': 'Канд. мед. наук', 'city': 'Санкт-Петербург', 'fir_name': 'Алексей', 'sec_name': 'Вальденберг', 'thi_name': 'Владимирович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Вальденберг Алексей Владимирович (Санкт-Петербург)'}
+Watching for file changes with StatReloader
+INFO:aiogram:Bot: regalii_bot [@regalii_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 72, in get_regalia
+    city = regalia[2].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-31' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+[14/Feb/2023 17:44:57] "POST /regals/ HTTP/1.1" 200 374
+[14/Feb/2023 18:34:50] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[14/Feb/2023 18:34:50] "    c                           " 400 -
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-530' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-533' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-542' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+Internal Server Error: /regals/
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/sp-regalii-dep/apps/regalii_app/views.py", line 17, in genreg
+    ins = importer.import_one_object()
+  File "/home/sp-regalii-dep/apps/regalii_app/importer.py", line 68, in import_one_object
+    first_name = spl_fio[1]
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-557' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=JSONDecodeError('Expecting value: line 1 column 1 (char 0)')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 78, in get_regalia
+    await bot.send_message(chat_id=message.chat.id, text=f"Ваши регалии готовы, скачивайте: {res.json()['url']}\n\nначинаем сначала!")
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[14/Feb/2023 20:22:07] "POST /regals/ HTTP/1.1" 500 101246
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-560' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+[14/Feb/2023 20:25:03] "POST /regals/ HTTP/1.1" 200 374
+[14/Feb/2023 20:25:19] "POST /regals/ HTTP/1.1" 200 374
+Not Found: /
+[15/Feb/2023 00:18:06] "GET / HTTP/1.1" 404 2344
+[15/Feb/2023 00:18:07] code 505, message Invalid HTTP version (2.0)
+[15/Feb/2023 00:18:07] "PRI * HTTP/2.0" 505 -
+Not Found: /
+[15/Feb/2023 00:22:54] "GET / HTTP/1.1" 404 2344
+Not Found: /
+[15/Feb/2023 02:08:06] "GET / HTTP/1.1" 404 2344
+[15/Feb/2023 02:37:10] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 02:37:10] "    c                           " 400 -
+[15/Feb/2023 03:20:48] code 400, message Bad request syntax ('MGLNDD_134.0.113.174_8000')
+[15/Feb/2023 03:20:48] "MGLNDD_134.0.113.174_8000" 400 -
+[15/Feb/2023 04:02:47] code 400, message Bad request version ('OÑËÜ®Ëd')
+[15/Feb/2023 04:02:47] "   TZ         .    I¨À )z» zÚf Ò~Uñi»©                ÃÐ¢|¦v½óOÑËÜ®Ëd" 400 -
+Not Found: /
+[15/Feb/2023 04:31:43] "GET / HTTP/1.1" 404 2344
+Not Found: /http:/api.ipify.org/
+[15/Feb/2023 04:32:07] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1818
+Not Found: /www.shadowserver.org:443
+[15/Feb/2023 04:32:10] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1827
+[15/Feb/2023 06:02:22] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 06:02:22] "    c                           " 400 -
+Not Found: /
+[15/Feb/2023 06:26:37] "GET / HTTP/1.1" 404 2369
+Not Found: /
+[15/Feb/2023 06:26:37] "GET / HTTP/1.1" 404 2369
+Not Found: /
+[15/Feb/2023 06:26:38] "GET / HTTP/1.1" 404 2369
+Not Found: /
+[15/Feb/2023 06:26:39] "GET / HTTP/1.1" 404 2369
+Not Found: /
+[15/Feb/2023 06:26:39] "GET / HTTP/1.1" 404 2369
+Not Found: /
+[15/Feb/2023 06:26:39] "GET / HTTP/1.1" 404 2369
+Not Found: /
+[15/Feb/2023 06:26:39] "GET / HTTP/1.1" 404 2369
+Not Found: /
+[15/Feb/2023 06:26:42] "GET / HTTP/1.1" 404 2369
+[15/Feb/2023 06:26:42,476] - Broken pipe from ('83.138.59.185', 52917)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-2535' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+[15/Feb/2023 06:59:29] "POST /regals/ HTTP/1.1" 200 374
+[15/Feb/2023 07:02:24] "POST /regals/ HTTP/1.1" 200 374
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-2582' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 14, 2023 - 17:43:51
+Django version 4.1.7, using settings 'regalii.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Импортирую: Тихонов Алексей Владимирович
+Импортировано: Тихонов Алексей Владимирович
+{'fio': 'Тихонов Алексей Владимирович', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Алексей', 'sec_name': 'Тихонов', 'thi_name': 'Владимирович', 'en_regalia': '', 'ru_regalia': 'Проф. Тихонов Алексей Владимирович (Москва)'}
+{'fio': 'Тихонов Алексей Владимирович', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Алексей', 'sec_name': 'Тихонов', 'thi_name': 'Владимирович', 'en_regalia': '', 'ru_regalia': 'Проф. Тихонов Алексей Владимирович (Москва)'}
+{'fio': 'Тихонов Алексей Владимирович', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Алексей', 'sec_name': 'Тихонов', 'thi_name': 'Владимирович', 'en_regalia': '', 'ru_regalia': 'Проф. Тихонов Алексей Владимирович (Москва)'}
+{'fio': 'Тихонов Алексей Владимирович', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Алексей', 'sec_name': 'Тихонов', 'thi_name': 'Владимирович', 'en_regalia': '', 'ru_regalia': 'Проф. Тихонов Алексей Владимирович (Москва)'}
+Импортирую: Каримов
+Импортирую: Пашков Сергей Олегович
+Импортировано: Пашков Сергей Олегович
+{'fio': 'Пашков Сергей Олегович', 'rank': 'Фанфарье', 'city': 'Сочи', 'fir_name': 'Сергей', 'sec_name': 'Пашков', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Фанфарье Пашков Сергей Олегович (Сочи)'}
+{'fio': 'Пашков Сергей Олегович', 'rank': 'Фанфарье', 'city': 'Сочи', 'fir_name': 'Сергей', 'sec_name': 'Пашков', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Фанфарье Пашков Сергей Олегович (Сочи)'}
+{'fio': 'Пашков Сергей Олегович', 'rank': 'Фанфарье', 'city': 'Сочи', 'fir_name': 'Сергей', 'sec_name': 'Пашков', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Фанфарье Пашков Сергей Олегович (Сочи)'}
+{'fio': 'Пашков Сергей Олегович', 'rank': 'Фанфарье', 'city': 'Сочи', 'fir_name': 'Сергей', 'sec_name': 'Пашков', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Фанфарье Пашков Сергей Олегович (Сочи)'}
+Импортирую: Пашков Сергей Олегович
+Импортировано: Пашков Сергей Олегович
+{'fio': 'Пашков Сергей Олегович', 'rank': 'Фанфарье', 'city': 'Сочи', 'fir_name': 'Сергей', 'sec_name': 'Пашков', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Фанфарье Пашков Сергей Олегович (Сочи)'}
+{'fio': 'Пашков Сергей Олегович', 'rank': 'Фанфарье', 'city': 'Сочи', 'fir_name': 'Сергей', 'sec_name': 'Пашков', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Фанфарье Пашков Сергей Олегович (Сочи)'}
+{'fio': 'Пашков Сергей Олегович', 'rank': 'Фанфарье', 'city': 'Сочи', 'fir_name': 'Сергей', 'sec_name': 'Пашков', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Фанфарье Пашков Сергей Олегович (Сочи)'}
+{'fio': 'Пашков Сергей Олегович', 'rank': 'Фанфарье', 'city': 'Сочи', 'fir_name': 'Сергей', 'sec_name': 'Пашков', 'thi_name': 'Олегович', 'en_regalia': '', 'ru_regalia': 'Фанфарье Пашков Сергей Олегович (Сочи)'}
+Импортирую: Волкова Инга Петровна
+Импортировано: Волкова Инга Петровна
+{'fio': 'Волкова Инга Петровна', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Инга', 'sec_name': 'Волкова', 'thi_name': 'Петровна', 'en_regalia': '', 'ru_regalia': 'Проф. Волкова Инга Петровна (Москва)'}
+{'fio': 'Волкова Инга Петровна', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Инга', 'sec_name': 'Волкова', 'thi_name': 'Петровна', 'en_regalia': '', 'ru_regalia': 'Проф. Волкова Инга Петровна (Москва)'}
+{'fio': 'Волкова Инга Петровна', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Инга', 'sec_name': 'Волкова', 'thi_name': 'Петровна', 'en_regalia': '', 'ru_regalia': 'Проф. Волкова Инга Петровна (Москва)'}
+{'fio': 'Волкова Инга Петровна', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Инга', 'sec_name': 'Волкова', 'thi_name': 'Петровна', 'en_regalia': '', 'ru_regalia': 'Проф. Волкова Инга Петровна (Москва)'}
+Импортирую: Вальденберг Алексей Владимирович
+Импортировано: Вальденберг Алексей Владимирович
+{'fio': 'Вальденберг Алексей Владимирович', 'rank': 'Канд. мед. наук', 'city': 'Санкт-Петербург', 'fir_name': 'Алексей', 'sec_name': 'Вальденберг', 'thi_name': 'Владимирович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Вальденберг Алексей Владимирович (Санкт-Петербург)'}
+{'fio': 'Вальденберг Алексей Владимирович', 'rank': 'Канд. мед. наук', 'city': 'Санкт-Петербург', 'fir_name': 'Алексей', 'sec_name': 'Вальденберг', 'thi_name': 'Владимирович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Вальденберг Алексей Владимирович (Санкт-Петербург)'}
+{'fio': 'Вальденберг Алексей Владимирович', 'rank': 'Канд. мед. наук', 'city': 'Санкт-Петербург', 'fir_name': 'Алексей', 'sec_name': 'Вальденберг', 'thi_name': 'Владимирович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Вальденберг Алексей Владимирович (Санкт-Петербург)'}
+{'fio': 'Вальденберг Алексей Владимирович', 'rank': 'Канд. мед. наук', 'city': 'Санкт-Петербург', 'fir_name': 'Алексей', 'sec_name': 'Вальденберг', 'thi_name': 'Владимирович', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Вальденберг Алексей Владимирович (Санкт-Петербург)'}
+Импортирую: Давыдова Ирина Вячеславовна
+Импортировано: Давыдова Ирина Вячеславовна
+{'fio': 'Давыдова Ирина Вячеславовна', 'rank': 'Фанатка', 'city': 'Москва', 'fir_name': 'Ирина', 'sec_name': 'Давыдова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Фанатка Давыдова Ирина Вячеславовна (Москва)'}
+[15/Feb/2023 07:05:18] "POST /regals/ HTTP/1.1" 200 374
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-2611' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+[15/Feb/2023 07:09:09] "POST /regals/ HTTP/1.1" 200 374
+Not Found: /
+[15/Feb/2023 08:34:57] "GET / HTTP/1.1" 404 2344
+[15/Feb/2023 09:31:41] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 09:31:41] "    c                           " 400 -
+Not Found: /
+[15/Feb/2023 11:40:30] "GET / HTTP/1.1" 404 2344
+[15/Feb/2023 13:31:15] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 13:31:15] "    c                           " 400 -
+[15/Feb/2023 13:51:19] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 13:51:19] "    c                           " 400 -
+[15/Feb/2023 14:13:30] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 14:13:30] "    c                           " 400 -
+[15/Feb/2023 14:36:42] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 14:36:42] "    c                           " 400 -
+[15/Feb/2023 14:43:38] code 400, message Bad request version ('À\x14À')
+[15/Feb/2023 14:43:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[15/Feb/2023 15:41:59] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 15:41:59] "    c                           " 400 -
+Internal Server Error: /regals/
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/sp-regalii-dep/apps/regalii_app/views.py", line 17, in genreg
+    ins = importer.import_one_object()
+  File "/home/sp-regalii-dep/apps/regalii_app/importer.py", line 68, in import_one_object
+    first_name = spl_fio[1]
+IndexError: list index out of range
+[15/Feb/2023 15:57:53] "POST /regals/ HTTP/1.1" 500 101204
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-4239' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=JSONDecodeError('Expecting value: line 1 column 1 (char 0)')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 78, in get_regalia
+    await bot.send_message(chat_id=message.chat.id, text=f"Ваши регалии готовы, скачивайте: {res.json()['url']}\n\nначинаем сначала!")
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-4243' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+[15/Feb/2023 15:58:53] "POST /regals/ HTTP/1.1" 200 374
+[15/Feb/2023 16:01:47] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 16:01:47] "    c                           " 400 -
+Not Found: /
+[15/Feb/2023 16:41:13] "GET / HTTP/1.1" 404 2344
+Not Found: /
+[15/Feb/2023 17:28:48] "GET / HTTP/1.1" 404 2344
+[15/Feb/2023 18:38:43] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 18:38:43] "    c                           " 400 -
+Not Found: /
+[15/Feb/2023 19:04:49] "GET / HTTP/1.1" 404 2369
+[15/Feb/2023 19:52:39] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[15/Feb/2023 19:52:39] "    c                           " 400 -
+[15/Feb/2023 21:11:43] code 400, message Bad request syntax ('nil')
+[15/Feb/2023 21:11:43] "nil" 400 -
+Not Found: /
+[15/Feb/2023 21:11:44] "GET / HTTP/1.0" 404 2339
+Not Found: /
+[15/Feb/2023 21:11:45] "GET / HTTP/1.1" 404 2344
+Not Found: /robots.txt
+[15/Feb/2023 21:11:46] "GET /robots.txt HTTP/1.1" 404 2392
+Not Found: /sitemap.xml
+[15/Feb/2023 21:11:46] "GET /sitemap.xml HTTP/1.1" 404 2395
+Not Found: /
+[15/Feb/2023 22:11:57] "GET / HTTP/1.1" 404 2369
+Not Found: /
+[15/Feb/2023 22:17:04] "GET / HTTP/1.1" 404 2344
+[16/Feb/2023 05:17:03] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[16/Feb/2023 05:17:03] "    c                           " 400 -
+[16/Feb/2023 05:25:12] "POST /regals/ HTTP/1.1" 200 374
+{'fio': 'Давыдова Ирина Вячеславовна', 'rank': 'Фанатка', 'city': 'Москва', 'fir_name': 'Ирина', 'sec_name': 'Давыдова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Фанатка Давыдова Ирина Вячеславовна (Москва)'}
+{'fio': 'Давыдова Ирина Вячеславовна', 'rank': 'Фанатка', 'city': 'Москва', 'fir_name': 'Ирина', 'sec_name': 'Давыдова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Фанатка Давыдова Ирина Вячеславовна (Москва)'}
+{'fio': 'Давыдова Ирина Вячеславовна', 'rank': 'Фанатка', 'city': 'Москва', 'fir_name': 'Ирина', 'sec_name': 'Давыдова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Фанатка Давыдова Ирина Вячеславовна (Москва)'}
+Импортирую: Бортняк Алина Германовна
+Импортировано: Бортняк Алина Германовна
+{'fio': 'Бортняк Алина Германовна', 'rank': 'Засл. работник ОВК', 'city': 'Москва', 'fir_name': 'Алина', 'sec_name': 'Бортняк', 'thi_name': 'Германовна', 'en_regalia': '', 'ru_regalia': 'Засл. работник ОВК Бортняк Алина Германовна (Москва)'}
+{'fio': 'Бортняк Алина Германовна', 'rank': 'Засл. работник ОВК', 'city': 'Москва', 'fir_name': 'Алина', 'sec_name': 'Бортняк', 'thi_name': 'Германовна', 'en_regalia': '', 'ru_regalia': 'Засл. работник ОВК Бортняк Алина Германовна (Москва)'}
+{'fio': 'Бортняк Алина Германовна', 'rank': 'Засл. работник ОВК', 'city': 'Москва', 'fir_name': 'Алина', 'sec_name': 'Бортняк', 'thi_name': 'Германовна', 'en_regalia': '', 'ru_regalia': 'Засл. работник ОВК Бортняк Алина Германовна (Москва)'}
+{'fio': 'Бортняк Алина Германовна', 'rank': 'Засл. работник ОВК', 'city': 'Москва', 'fir_name': 'Алина', 'sec_name': 'Бортняк', 'thi_name': 'Германовна', 'en_regalia': '', 'ru_regalia': 'Засл. работник ОВК Бортняк Алина Германовна (Москва)'}
+Импортирую: Инга
+Импортирую: Якубова Розалина Александровна
+Импортировано: Якубова Розалина Александровна
+{'fio': 'Якубова Розалина Александровна', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Розалина', 'sec_name': 'Якубова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Проф. Якубова Розалина Александровна (Москва)'}
+{'fio': 'Якубова Розалина Александровна', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Розалина', 'sec_name': 'Якубова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Проф. Якубова Розалина Александровна (Москва)'}
+{'fio': 'Якубова Розалина Александровна', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Розалина', 'sec_name': 'Якубова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Проф. Якубова Розалина Александровна (Москва)'}
+{'fio': 'Якубова Розалина Александровна', 'rank': 'Проф.', 'city': 'Москва', 'fir_name': 'Розалина', 'sec_name': 'Якубова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Проф. Якубова Розалина Александровна (Москва)'}
+Импортирую: и управления здравоохранением,
+Импортировано: и управления здравоохранением,
+{'fio': 'и управления здравоохранением,', 'rank': 'Проректор Высшей школы организации', 'city': 'главный редактор ИГ «ГЭОТАР-Медиа»,', 'fir_name': 'управления', 'sec_name': 'и', 'thi_name': 'здравоохранением,', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор ИГ «ГЭОТАР-Медиа»,)'}
+{'fio': 'и управления здравоохранением,', 'rank': 'Проректор Высшей школы организации', 'city': 'главный редактор ИГ «ГЭОТАР-Медиа»,', 'fir_name': 'управления', 'sec_name': 'и', 'thi_name': 'здравоохранением,', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор ИГ «ГЭОТАР-Медиа»,)'}
+{'fio': 'и управления здравоохранением,', 'rank': 'Проректор Высшей школы организации', 'city': 'главный редактор ИГ «ГЭОТАР-Медиа»,', 'fir_name': 'управления', 'sec_name': 'и', 'thi_name': 'здравоохранением,', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор ИГ «ГЭОТАР-Медиа»,)'}
+{'fio': 'и управления здравоохранением,', 'rank': 'Проректор Высшей школы организации', 'city': 'главный редактор ИГ «ГЭОТАР-Медиа»,', 'fir_name': 'управления', 'sec_name': 'и', 'thi_name': 'здравоохранением,', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор ИГ «ГЭОТАР-Медиа»,)'}
+Импортирую: организации и управления здравоохранением,
+Импортировано: организации и управления здравоохранением,
+{'fio': 'организации и управления здравоохранением,', 'rank': 'Проректор Высшей школы', 'city': 'главный редактор ИГ «ГЭОТАР Медиа»,', 'fir_name': 'и', 'sec_name': 'организации', 'thi_name': 'управления', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор ИГ «ГЭОТАР Медиа»,)'}
+{'fio': 'организации и управления здравоохранением,', 'rank': 'Проректор Высшей школы', 'city': 'главный редактор ИГ «ГЭОТАР Медиа»,', 'fir_name': 'и', 'sec_name': 'организации', 'thi_name': 'управления', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор ИГ «ГЭОТАР Медиа»,)'}
+[16/Feb/2023 05:27:03] "POST /regals/ HTTP/1.1" 200 374
+Internal Server Error: /regals/
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/sp-regalii-dep/apps/regalii_app/views.py", line 17, in genreg
+    ins = importer.import_one_object()
+  File "/home/sp-regalii-dep/apps/regalii_app/importer.py", line 68, in import_one_object
+    first_name = spl_fio[1]
+IndexError: list index out of range
+[16/Feb/2023 05:29:11] "POST /regals/ HTTP/1.1" 500 101820
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-6731' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=JSONDecodeError('Expecting value: line 1 column 1 (char 0)')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 78, in get_regalia
+    await bot.send_message(chat_id=message.chat.id, text=f"Ваши регалии готовы, скачивайте: {res.json()['url']}\n\nначинаем сначала!")
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[16/Feb/2023 05:30:45] "POST /regals/ HTTP/1.1" 200 374
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-6751' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-6755' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 72, in get_regalia
+    city = regalia[2].strip()
+IndexError: list index out of range
+[16/Feb/2023 05:33:05] "POST /regals/ HTTP/1.1" 200 374
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-6770' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-6779' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 72, in get_regalia
+    city = regalia[2].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-6815' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+[16/Feb/2023 05:53:20] "POST /regals/ HTTP/1.1" 200 374
+[16/Feb/2023 05:53:23] "POST /regals/ HTTP/1.1" 200 374
+[16/Feb/2023 06:35:02,136] - Broken pipe from ('167.94.145.59', 58730)
+Not Found: /
+[16/Feb/2023 06:35:03] "GET / HTTP/1.1" 404 2344
+[16/Feb/2023 06:35:03,601] - Broken pipe from ('167.94.145.59', 38358)
+Not Found: /
+[16/Feb/2023 06:35:03] "GET / HTTP/1.1" 404 2344
+[16/Feb/2023 06:35:03] code 505, message Invalid HTTP version (2.0)
+[16/Feb/2023 06:35:03] "PRI * HTTP/2.0" 505 -
+[16/Feb/2023 07:11:43] code 400, message Bad request syntax ('MGLNDD_134.0.113.174_8000')
+[16/Feb/2023 07:11:43] "MGLNDD_134.0.113.174_8000" 400 -
+[16/Feb/2023 07:52:34] code 400, message Bad request version ('À\x14À')
+[16/Feb/2023 07:52:34] You're accessing the development server over HTTPS, but it only supports HTTP.
+[16/Feb/2023 07:58:22] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03@\x16\x8c\x89VFK$·ß\x96IÅ\x8e¤Æ³\x83=â\x8fq½z\x89\x11¢,\x05ëYx\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[16/Feb/2023 07:58:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[16/Feb/2023 07:58:22] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03')
+[16/Feb/2023 07:58:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[16/Feb/2023 07:58:22] "GET / HTTP/1.1" 404 2344
+[16/Feb/2023 07:58:23] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03^rlÝ\x05êûÇx\x03SJ\x9c\x828o\x98Iïï\x1b&ÚÔx`Ü\x08!oDB\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+[16/Feb/2023 07:58:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[16/Feb/2023 08:09:13] "GET / HTTP/1.1" 404 2369
+Not Found: /favicon.ico
+[16/Feb/2023 08:09:13] "GET /favicon.ico HTTP/1.1" 404 2420
+Not Found: /
+[16/Feb/2023 08:09:24] "GET / HTTP/1.1" 404 2369
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7289' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 72, in get_regalia
+    city = regalia[2].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7292' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7301' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 72, in get_regalia
+    city = regalia[2].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7304' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+{'fio': 'организации и управления здравоохранением,', 'rank': 'Проректор Высшей школы', 'city': 'главный редактор ИГ «ГЭОТАР Медиа»,', 'fir_name': 'и', 'sec_name': 'организации', 'thi_name': 'управления', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор ИГ «ГЭОТАР Медиа»,)'}
+{'fio': 'организации и управления здравоохранением,', 'rank': 'Проректор Высшей школы', 'city': 'главный редактор ИГ «ГЭОТАР Медиа»,', 'fir_name': 'и', 'sec_name': 'организации', 'thi_name': 'управления', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор ИГ «ГЭОТАР Медиа»,)'}
+Импортирую: главный
+Импортирую: организации и управления здравоохранением,
+Импортировано: организации и управления здравоохранением,
+{'fio': 'организации и управления здравоохранением,', 'rank': 'Проректор Высшей школы', 'city': 'главный редактор', 'fir_name': 'и', 'sec_name': 'организации', 'thi_name': 'управления', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор)'}
+{'fio': 'организации и управления здравоохранением,', 'rank': 'Проректор Высшей школы', 'city': 'главный редактор', 'fir_name': 'и', 'sec_name': 'организации', 'thi_name': 'управления', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор)'}
+{'fio': 'организации и управления здравоохранением,', 'rank': 'Проректор Высшей школы', 'city': 'главный редактор', 'fir_name': 'и', 'sec_name': 'организации', 'thi_name': 'управления', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор)'}
+{'fio': 'организации и управления здравоохранением,', 'rank': 'Проректор Высшей школы', 'city': 'главный редактор', 'fir_name': 'и', 'sec_name': 'организации', 'thi_name': 'управления', 'en_regalia': '', 'ru_regalia': 'Проректор Высшей школы организации и управления здравоохранением, (главный редактор)'}
+Импортирую: Агафонова Ольга
+Импортировано: Агафонова Ольга
+{'fio': 'Агафонова Ольга', 'rank': 'Канд. мед. наук', 'city': 'Вячеславовна', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга (Вячеславовна)'}
+{'fio': 'Агафонова Ольга', 'rank': 'Канд. мед. наук', 'city': 'Вячеславовна', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга (Вячеславовна)'}
+{'fio': 'Агафонова Ольга', 'rank': 'Канд. мед. наук', 'city': 'Вячеславовна', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга (Вячеславовна)'}
+{'fio': 'Агафонова Ольга', 'rank': 'Канд. мед. наук', 'city': 'Вячеславовна', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга (Вячеславовна)'}
+Импортирую: Агафонова Ольга Вячеславовна
+Импортировано: Агафонова Ольга Вячеславовна
+{'fio': 'Агафонова Ольга Вячеславовна', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга Вячеславовна (Москва)'}
+{'fio': 'Агафонова Ольга Вячеславовна', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга Вячеславовна (Москва)'}
+{'fio': 'Агафонова Ольга Вячеславовна', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга Вячеславовна (Москва)'}
+{'fio': 'Агафонова Ольга Вячеславовна', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга Вячеславовна (Москва)'}
+Импортирую: Агафонова Ольга Вячеславовна
+Импортировано: Агафонова Ольга Вячеславовна
+{'fio': 'Агафонова Ольга Вячеславовна', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга Вячеславовна (Москва)'}
+{'fio': 'Агафонова Ольга Вячеславовна', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга Вячеславовна (Москва)'}
+{'fio': 'Агафонова Ольга Вячеславовна', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга Вячеславовна (Москва)'}
+{'fio': 'Агафонова Ольга Вячеславовна', 'rank': 'Канд. мед. наук', 'city': 'Москва', 'fir_name': 'Ольга', 'sec_name': 'Агафонова', 'thi_name': 'Вячеславовна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Агафонова Ольга Вячеславовна (Москва)'}
+Импортирую: Борисов Виктор Викторович
+Импортировано: Борисов Виктор Викторович
+[16/Feb/2023 08:16:04] "POST /regals/ HTTP/1.1" 200 374
+[16/Feb/2023 08:36:03] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:03] "   àZ          =K  m ¨À Éåb admin                                           0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:03] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:03] "   àZ          =K  m ¨À Éåb admin                                           0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:04] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:04] "   àZ          =K  m ¨À Éåb admin                                           0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:04] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:04] "   àZ          =K  m ¨À Éåb admin                                           0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:04] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:04] "   àZ          =K  m ¨À Éåb admin                                           0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:04] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:04] "   àZ          =K  m ¨À Éåb admin                                           0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:04] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:04] "   àZ          =K  m ¨À Éåb 666666                                          0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:11] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:11] "   àZ          =K  m ¨À Éåb 888888                                          0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:11] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:11] "   àZ          =K  m ¨À Éåb 0                                               0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:11] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:11] "   àZ          =K  m ¨À Éåb default                                         0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:11] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:11] "   àZ          =K  m ¨À Éåb admin                                           0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:11] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:11] "   àZ          =K  m ¨À Éåb guest                                           0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:12] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:12] "   àZ          =K  m ¨À Éåb admin                                           0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:12] code 400, message Bad request version ('\x8b×\x05;½')
+[16/Feb/2023 08:36:12] "   àZ          =K  m ¨À Éåb user                                            0 J~T>e.~v;ÍÈoÍeÍjiåAOAð¤--bàÍÝG,JïêÈUÝÃWX,¨­dlÒ×;½" 400 -
+[16/Feb/2023 08:36:20,720] - Broken pipe from ('37.113.188.151', 11039)
+[16/Feb/2023 08:36:25,789] - Broken pipe from ('37.113.188.151', 13129)
+[16/Feb/2023 08:36:33,260] - Broken pipe from ('37.113.188.151', 14818)
+[16/Feb/2023 08:36:38,311] - Broken pipe from ('37.113.188.151', 2438)
+[16/Feb/2023 08:36:43,358] - Broken pipe from ('37.113.188.151', 2719)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7408' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7411' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7419' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7422' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7430' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+[16/Feb/2023 08:47:20] "POST /regals/ HTTP/1.1" 200 374
+[16/Feb/2023 08:48:01] "POST /regals/ HTTP/1.1" 200 374
+[16/Feb/2023 08:48:53] "POST /regals/ HTTP/1.1" 200 374
+[16/Feb/2023 08:53:40] "POST /regals/ HTTP/1.1" 200 374
+{'fio': 'Борисов Виктор Викторович', 'rank': 'IT-директор ГК StatusPraesens', 'city': 'Москва', 'fir_name': 'Виктор', 'sec_name': 'Борисов', 'thi_name': 'Викторович', 'en_regalia': '', 'ru_regalia': 'IT-директор ГК StatusPraesens Борисов Виктор Викторович (Москва)'}
+{'fio': 'Борисов Виктор Викторович', 'rank': 'IT-директор ГК StatusPraesens', 'city': 'Москва', 'fir_name': 'Виктор', 'sec_name': 'Борисов', 'thi_name': 'Викторович', 'en_regalia': '', 'ru_regalia': 'IT-директор ГК StatusPraesens Борисов Виктор Викторович (Москва)'}
+{'fio': 'Борисов Виктор Викторович', 'rank': 'IT-директор ГК StatusPraesens', 'city': 'Москва', 'fir_name': 'Виктор', 'sec_name': 'Борисов', 'thi_name': 'Викторович', 'en_regalia': '', 'ru_regalia': 'IT-директор ГК StatusPraesens Борисов Виктор Викторович (Москва)'}
+{'fio': 'Борисов Виктор Викторович', 'rank': 'IT-директор ГК StatusPraesens', 'city': 'Москва', 'fir_name': 'Виктор', 'sec_name': 'Борисов', 'thi_name': 'Викторович', 'en_regalia': '', 'ru_regalia': 'IT-директор ГК StatusPraesens Борисов Виктор Викторович (Москва)'}
+Импортирую: Полякова Анна
+Импортировано: Полякова Анна
+{'fio': 'Полякова Анна', 'rank': 'Канд. мед. наук', 'city': 'Александровна', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна (Александровна)'}
+{'fio': 'Полякова Анна', 'rank': 'Канд. мед. наук', 'city': 'Александровна', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна (Александровна)'}
+{'fio': 'Полякова Анна', 'rank': 'Канд. мед. наук', 'city': 'Александровна', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна (Александровна)'}
+{'fio': 'Полякова Анна', 'rank': 'Канд. мед. наук', 'city': 'Александровна', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна (Александровна)'}
+Импортирую: Полякова Анна Александровна
+Импортировано: Полякова Анна Александровна
+{'fio': 'Полякова Анна Александровна', 'rank': 'Канд. мед. наук', 'city': '', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна ((Курск))'}
+{'fio': 'Полякова Анна Александровна', 'rank': 'Канд. мед. наук', 'city': '', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна ((Курск))'}
+{'fio': 'Полякова Анна Александровна', 'rank': 'Канд. мед. наук', 'city': '', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна ((Курск))'}
+{'fio': 'Полякова Анна Александровна', 'rank': 'Канд. мед. наук', 'city': '', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна ((Курск))'}
+Импортирую: Анна Александровна
+Импортировано: Анна Александровна
+{'fio': 'Анна Александровна', 'rank': 'Канд. мед. наук Полякова', 'city': '', 'fir_name': 'Александровна', 'sec_name': 'Анна', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна ((Курск))'}
+{'fio': 'Анна Александровна', 'rank': 'Канд. мед. наук Полякова', 'city': '', 'fir_name': 'Александровна', 'sec_name': 'Анна', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна ((Курск))'}
+{'fio': 'Анна Александровна', 'rank': 'Канд. мед. наук Полякова', 'city': '', 'fir_name': 'Александровна', 'sec_name': 'Анна', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна ((Курск))'}
+{'fio': 'Анна Александровна', 'rank': 'Канд. мед. наук Полякова', 'city': '', 'fir_name': 'Александровна', 'sec_name': 'Анна', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна ((Курск))'}
+Импортирую: Анна Александровна
+Импортировано: Анна Александровна
+{'fio': 'Анна Александровна', 'rank': 'Канд. мед. наукПолякова', 'city': 'Курск', 'fir_name': 'Александровна', 'sec_name': 'Анна', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наукПолякова Анна Александровна (Курск)'}
+{'fio': 'Анна Александровна', 'rank': 'Канд. мед. наукПолякова', 'city': 'Курск', 'fir_name': 'Александровна', 'sec_name': 'Анна', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наукПолякова Анна Александровна (Курск)'}
+{'fio': 'Анна Александровна', 'rank': 'Канд. мед. наукПолякова', 'city': 'Курск', 'fir_name': 'Александровна', 'sec_name': 'Анна', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наукПолякова Анна Александровна (Курск)'}
+{'fio': 'Анна Александровна', 'rank': 'Канд. мед. наукПолякова', 'city': 'Курск', 'fir_name': 'Александровна', 'sec_name': 'Анна', 'thi_name': None, 'en_regalia': '', 'ru_regalia': 'Канд. мед. наукПолякова Анна Александровна (Курск)'}
+Импортирую: Полякова Анна Александровна
+Импортировано: Полякова Анна Александровна
+{'fio': 'Полякова Анна Александровна', 'rank': 'Канд. мед. наук', 'city': 'Курск', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна (Курск)'}
+{'fio': 'Полякова Анна Александровна', 'rank': 'Канд. мед. наук', 'city': 'Курск', 'fir_name': 'Анна', 'sec_name': 'Полякова', 'thi_name': 'Александровна', 'en_regalia': '', 'ru_regalia': 'Канд. мед. наук Полякова Анна Александровна (Курск)'}
+[16/Feb/2023 08:54:04] "POST /regals/ HTTP/1.1" 200 374
+Not Found: /
+[16/Feb/2023 11:10:15] "HEAD / HTTP/1.0" 404 2370
+Not Found: /system_api.php
+[16/Feb/2023 11:10:15] "GET /system_api.php HTTP/1.1" 404 2404
+Not Found: /c/version.js
+[16/Feb/2023 11:10:15] "GET /c/version.js HTTP/1.1" 404 2398
+Not Found: /streaming/clients_live.php
+[16/Feb/2023 11:10:16] "GET /streaming/clients_live.php HTTP/1.1" 404 2440
+Not Found: /stalker_portal/c/version.js
+[16/Feb/2023 11:10:16] "GET /stalker_portal/c/version.js HTTP/1.1" 404 2443
+Not Found: /stream/live.php
+[16/Feb/2023 11:10:16] "GET /stream/live.php HTTP/1.1" 404 2407
+Not Found: /flu/403.html
+[16/Feb/2023 11:10:16] "GET /flu/403.html HTTP/1.1" 404 2398
+Not Found: /
+[16/Feb/2023 11:10:17] "GET / HTTP/1.1" 404 2344
+[16/Feb/2023 11:14:17] code 400, message Bad request version ('À\x13À')
+[16/Feb/2023 11:14:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[16/Feb/2023 11:14:27] "GET / HTTP/1.1" 404 2344
+[16/Feb/2023 11:14:28,057] - Broken pipe from ('43.130.57.239', 55858)
+Not Found: /
+[16/Feb/2023 11:14:46] "GET / HTTP/1.1" 404 2367
+Not Found: /favicon.ico
+[16/Feb/2023 11:14:47] "GET /favicon.ico HTTP/1.1" 404 2418
+Not Found: /
+[16/Feb/2023 11:14:52] "GET / HTTP/1.1" 404 2344
+Not Found: /favicon.ico
+[16/Feb/2023 11:14:53] "GET /favicon.ico HTTP/1.1" 404 2395
+Not Found: /
+[16/Feb/2023 11:15:12] "GET / HTTP/1.1" 404 2355
+Not Found: /favicon.ico
+[16/Feb/2023 11:15:13] "GET /favicon.ico HTTP/1.1" 404 2406
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiohttp/client_reqrep.py", line 899, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiohttp/streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ServerDisconnectedError: Server disconnected
+[16/Feb/2023 12:58:30] code 400, message Bad HTTP/0.9 request type ('\\x01\\x00\\x00\\x00')
+[16/Feb/2023 12:58:30] "\x01\x00\x00\x00 \xbf\x02\x00\x88\x13\x00\x00\x87\x00\x00\x00NIMABIJIAN\x04\x03\x00\x00{\x99Caig\x9c\x03\xc7eB\xc5\t\xc1\x18a\x11\x1a\x91\x1f\x02\tcof\x91\xc0\x80sJ5\xd2\x80\xe6\x9a~\xb9\xc7\x83^\x96\xeeN\x16\x96\x96&\xe6\x03\xea\xbc\x81\x02=\xac\x10\xfa?7\x03\xc3\xdf\xf7\xe4\x98`p\xe6\x8d\xc1\xa9\x8d\xc6\x06\xdb\xaf\x91\xe7\x82s\xf7\x14H\xd4\xe1W\x9a\x93C\x9e]\xa4\x01#\x03#\x03]\x03c]CC\x05C\x03+S\x03b\xf4\x00\x00/\x9e\x16E" 400 -
+Not Found: /favicon.ico
+[16/Feb/2023 12:58:31] "GET /favicon.ico HTTP/1.1" 404 2395
+Not Found: /robots.txt
+[16/Feb/2023 12:58:32] "GET /robots.txt HTTP/1.1" 404 2392
+Not Found: /.well-known/security.txt
+[16/Feb/2023 12:58:33] "GET /.well-known/security.txt HTTP/1.1" 404 2434
+Not Found: /
+[16/Feb/2023 13:08:46] "GET / HTTP/1.1" 404 2369
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiohttp/client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiohttp/client_reqrep.py", line 899, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiohttp/streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/bot/api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 104] Connection reset by peer
+Not Found: /
+[16/Feb/2023 15:46:37] "GET / HTTP/1.1" 404 2344
+Not Found: /http:/api.ipify.org/
+[16/Feb/2023 15:47:38] "GET http://api.ipify.org/?format=json HTTP/1.1" 404 1818
+Not Found: /www.shadowserver.org:443
+[16/Feb/2023 15:48:00] "CONNECT www.shadowserver.org:443 HTTP/1.1" 404 1827
+[16/Feb/2023 15:59:26] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+[16/Feb/2023 15:59:26] "  *%à     Cookie: mstshash=Test" 400 -
+[16/Feb/2023 15:59:32] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+[16/Feb/2023 15:59:32] "  *%à     Cookie: mstshash=Test" 400 -
+[16/Feb/2023 16:16:21] code 400, message Bad request version ('À\x14À')
+[16/Feb/2023 16:16:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[16/Feb/2023 16:59:25] "GET / HTTP/1.1" 404 2344
+Not Found: /
+[16/Feb/2023 20:46:54] "GET / HTTP/1.1" 404 2344
+Not Found: /c/
+[16/Feb/2023 23:36:23] "GET /c/ HTTP/1.1" 404 2368
+[17/Feb/2023 00:51:23,821] - Broken pipe from ('167.94.138.63', 42418)
+Not Found: /
+[17/Feb/2023 00:51:24] "GET / HTTP/1.1" 404 2344
+[17/Feb/2023 00:51:25,135] - Broken pipe from ('167.94.138.63', 45202)
+Not Found: /
+[17/Feb/2023 00:51:25] "GET / HTTP/1.1" 404 2344
+[17/Feb/2023 00:51:25] code 505, message Invalid HTTP version (2.0)
+[17/Feb/2023 00:51:25] "PRI * HTTP/2.0" 505 -
+[17/Feb/2023 01:58:45] code 400, message Bad request version ('cof\x91À\x80sJ5Ò\x80æ\x9a~¹Ç\x83^\x96îN\x16\x96\x96&æ\x03ê¼\x81\x02=¬\x10ú?7\x03Ãß÷ä\x98`pæ\x8dÁ©\x8dÆ\x06Û¯\x91ç\x82s÷\x14HÔáW\x9a\x93C\x9e]¤\x01#\x03#\x03]\x03c]CC\x05C\x03+S\x03bô\x00\x00/\x9e\x16E')
+[17/Feb/2023 01:58:45] "    ¿      NIMABIJIAN  {CaigÇeBÅ	Áa	cofÀsJ5Òæ~¹Ç^îN&æê¼=¬ú?7Ãß÷ä`pæÁ©ÆÛ¯çs÷HÔáWC]¤##]c]CCC+Sbô  /E" 400 -
+Not Found: /google.com:443
+[17/Feb/2023 02:15:24] "CONNECT google.com:443 HTTP/1.1" 404 1791
+[17/Feb/2023 03:12:06,577] - Broken pipe from ('167.248.133.60', 42148)
+Not Found: /
+[17/Feb/2023 03:12:07] "GET / HTTP/1.1" 404 2344
+[17/Feb/2023 03:12:07,874] - Broken pipe from ('167.248.133.60', 54512)
+Not Found: /
+[17/Feb/2023 03:12:08] "GET / HTTP/1.1" 404 2344
+[17/Feb/2023 03:12:08] code 505, message Invalid HTTP version (2.0)
+[17/Feb/2023 03:12:08] "PRI * HTTP/2.0" 505 -
+[17/Feb/2023 03:39:43,291] - Broken pipe from ('162.142.125.213', 38800)
+Not Found: /
+[17/Feb/2023 03:39:44] "GET / HTTP/1.1" 404 2344
+[17/Feb/2023 03:39:44,751] - Broken pipe from ('162.142.125.213', 60450)
+Not Found: /
+[17/Feb/2023 03:39:44] "GET / HTTP/1.1" 404 2344
+[17/Feb/2023 03:39:45] code 505, message Invalid HTTP version (2.0)
+[17/Feb/2023 03:39:45] "PRI * HTTP/2.0" 505 -
+[17/Feb/2023 03:42:32] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01')
+[17/Feb/2023 03:42:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+[17/Feb/2023 03:42:42] "GET / HTTP/1.1" 404 2344
+Not Found: /favicon.ico
+[17/Feb/2023 03:43:03] "GET /favicon.ico HTTP/1.1" 404 2395
+Not Found: /robots.txt
+[17/Feb/2023 03:43:06] "GET /robots.txt HTTP/1.1" 404 2392
+Not Found: /sitemap.xml
+[17/Feb/2023 03:43:08] "GET /sitemap.xml HTTP/1.1" 404 2395
+Not Found: /
+[17/Feb/2023 04:41:02] "GET / HTTP/1.1" 404 2344
+[17/Feb/2023 06:01:00] "POST /regals/ HTTP/1.1" 200 374
+[17/Feb/2023 06:12:22] "POST /regals/ HTTP/1.1" 200 374
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-11422' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 72, in get_regalia
+    city = regalia[2].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-11425' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-11428' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-11437' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 72, in get_regalia
+    city = regalia[2].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-11440' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-11448' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 72, in get_regalia
+    city = regalia[2].strip()
+IndexError: list index out of range
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-11452' coro=<Dispatcher._process_polling_updates() done, defined at /home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=IndexError('list index out of range')>
+Traceback (most recent call last):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "/home/sp-regalii-dep/venv/lib/python3.8/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/sp-regalii-dep/apps/tgbot/handlers.py", line 71, in get_regalia
+    fio = regalia[1].strip()
+IndexError: list index out of range
+[17/Feb/2023 06:27:59] "POST /regals/ HTTP/1.1" 200 374

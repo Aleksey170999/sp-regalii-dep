@@ -11,7 +11,7 @@ from bot_cfg import bot
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # DOMAIN_URL = 'https://regalii-app.herokuapp.com/'
-DOMAIN_URL = 'http://127.0.0.1:8000/'
+DOMAIN_URL = 'http://134-0-113-174.cloudvps.regruhosting.ru:8000/'
 
 
 async def start_command(message: types.Message):
