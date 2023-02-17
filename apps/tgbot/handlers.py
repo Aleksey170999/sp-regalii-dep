@@ -21,6 +21,24 @@ async def start_command(message: types.Message):
     await BotState.howto.set()
 
 
+async def help_command(message: types.Message):
+    await bot.send_message(chat_id=message.chat.id,
+                           text="""
+                            Примеры:
+                            
+                            Канд. мед. наук.
+                            Пашков Сергей Олегович
+                            Сочи
+                            
+                            Пашков Сергей Олегович
+                            Сочи""",
+
+
+
+                           reply_markup=greet_kb)
+    await BotState.howto.set()
+
+
 async def get_howto(message: types.Message, state: FSMContext):
     await state.update_data(howto=message.text)
 
@@ -87,6 +105,8 @@ async def get_regalia(message: types.Message, state: FSMContext):
 
 def register_handlers_common(dp: Dispatcher):
     dp.register_message_handler(start_command, commands=["start"])
+    dp.register_message_handler(help_command, commands=["help"])
+
     dp.register_message_handler(get_howto, state=BotState.howto, content_types=['text'])
     dp.register_message_handler(get_file, state=BotState.file, content_types=[types.ContentType.DOCUMENT, 'text'])
     dp.register_message_handler(get_regalia, state=BotState.regalia, content_types=['text'])
