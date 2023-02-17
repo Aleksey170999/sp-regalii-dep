@@ -67,9 +67,15 @@ async def get_regalia(message: types.Message, state: FSMContext):
     await state.update_data(regalia=message.text)
     data = await state.get_data()
     regalia = data['regalia'].split('\n')
-    rank = regalia[0].strip()
-    fio = regalia[1].strip()
-    city = regalia[2].strip()
+    if len(regalia) == 3:
+        rank = regalia[0].strip()
+        fio = regalia[1].strip()
+        city = regalia[2].strip()
+    else:
+        rank = ""
+        fio = regalia[1].strip()
+        city = regalia[2].strip()
+
     full = f"{rank} {fio} ({city})"
     data_json = {'regalia': full,
                  'city': city,
