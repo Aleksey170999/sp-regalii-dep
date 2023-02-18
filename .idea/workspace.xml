@@ -231,7 +231,7 @@
       <workItem from="1670325704528" duration="22975000" />
       <workItem from="1670514740373" duration="4344000" />
       <workItem from="1670576692840" duration="1736000" />
-      <workItem from="1676615942092" duration="1271000" />
+      <workItem from="1676615942092" duration="2655000" />
     </task>
     <task id="LOCAL-00001" summary="2strings telegram">
       <created>1676616055430</created>
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676616055430</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2strings telegram">
+      <created>1676617395161</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676617395161</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
