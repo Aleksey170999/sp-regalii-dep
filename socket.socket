@@ -1,6 +1,0 @@
-[Unit]
-Description=nginxtutorial socket
-[Socket]
-ListenStream=/run/regalii.sock
-[Install]
-WantedBy=sockets.target
