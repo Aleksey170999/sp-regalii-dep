@@ -1,4 +1,0 @@
--- Logs begin at Wed 2023-01-11 02:24:55 MSK, end at Tue 2023-02-14 20:02:19 MSK. --
-Feb 14 20:00:22 134-0-113-174.cloudvps.regruhosting.ru systemd[1]: Listening on nginxtutorial socket.
-Feb 14 20:01:59 134-0-113-174.cloudvps.regruhosting.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mregalii.socket: Failed to queue service startup job (Maybe the service file is missing or not a non-template unit?): Unit nginxtutorial.socket not found.[0m
-Feb 14 20:01:59 134-0-113-174.cloudvps.regruhosting.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mregalii.socket: Failed with result 'resources'.[0m
