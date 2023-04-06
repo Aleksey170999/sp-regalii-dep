@@ -13,7 +13,7 @@ class Regalia(models.Model):
     regalia = models.CharField('Регалия', max_length=512, blank=True)
     comments = models.TextField('Комментарии', blank=True)
     operation = models.ForeignKey('Operation', on_delete=models.CASCADE, null=True, blank=True)
-
+    is_generated = models.BooleanField(default=False)
     def __str__(self):
         return str(self.id)
 

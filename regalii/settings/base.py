@@ -101,23 +101,18 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # GoogleAuth credentials
 GOOGLE_CREDENTIALS_FILE = BASE_DIR / 'credentials.json'
 
-
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = BASE_DIR / "media"
 MEDIA_URL = '/media/'
-# DOWNLOAD_URL = 'https://regalii-app.herokuapp.com/media/'
-DOMAIN_URL = 'https://regalii-app.herokuapp.com/'
-HEROKU_URL = 'https://regalii-app.herokuapp.com/'
 # YANDEX_CLOUD SETTINGS
 AWS_ACCESS_KEY_ID = config['AWS_ACCESS_KEY_ID']
 AWS_SECRET_ACCESS_KEY = config['AWS_SECRET_ACCESS_KEY']
 SERVICE_NAME = config['SERVICE_NAME']
 ENDPOINT_URL = config['ENDPOINT_URL']
 REGION_NAME = config['REGION_NAME']
-
+#  TELEGRAM SETTINGS
 TG_BOT_TOKEN = config['BOT_TOKEN']
 
 #  CORS SETTINGS
-
 CORS_ORIGIN_ALLOW_ALL = True

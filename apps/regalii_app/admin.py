@@ -4,7 +4,7 @@ from .models import Regalia, Operation
 
 class RegaliaAdmin(admin.ModelAdmin):
     ordering = ['full_name']
-    list_display = ['full_name', 'rank', 'city']
+    list_display = ['full_name', 'rank', 'city', 'is_generated']
 
 
 admin.site.register(Regalia, RegaliaAdmin)

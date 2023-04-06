@@ -13,7 +13,7 @@ from .models import Regalia, Operation
 class RegaliaImporter():
     # excel = pd.read_excel('regs.xlsx', 'Доделать_25.08')
     _scope = ['https://www.googleapis.com/auth/spreadsheets']
-    _book_name = 'Лист8'
+    _book_name = 'FV-апрель'
     _sheet_id = '11oyFJ_wKGDaR9kS-0_ThSH-K6htguHHbgekiUf49OQg'  # Все
 
     def __init__(self, ins=None, file=None, f=None):
@@ -37,7 +37,7 @@ class RegaliaImporter():
     def get_values(self):
         service = build('sheets', 'v4', credentials=self.creds)
         sheet = service.spreadsheets()
-        result = sheet.values().get(spreadsheetId=self._sheet_id, range=f"ДОП СПБ-23!A{self.f}:C400").execute()
+        result = sheet.values().get(spreadsheetId=self._sheet_id, range=f"{self._book_name}!A{self.f}:C400").execute()
         values = result.get('values', [])
 
         return values

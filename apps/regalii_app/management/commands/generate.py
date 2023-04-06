@@ -8,3 +8,5 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         generator = RegaliaGenerator(qs=Regalia.objects.all())
         generator.generate_all()
+        archname = generator.save_to_archive()
+

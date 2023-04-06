@@ -28,7 +28,9 @@ class RegaliaGenerator:
         for ins in self.qs:
             self.generate_one(ins)
             counter += 1
-        print(counter)
+            ins.is_generated = True
+            ins.save()
+            print(ins.full_name)
 
     def generate_png(self, im, ins, font, size):
         draw = ImageDraw.Draw(im)
@@ -72,7 +74,11 @@ class RegaliaGenerator:
                 if thi_name is not None:
                     text = f"{rank}" + "\n" + f"{fio.split()[0]}" + "\n" + f"{fio.split()[1]} {fio.split()[2]}" + "\n" + f"({city})"
                 else:
-                    text = f"{rank}" + "\n" + f"{fio.split()[0]} {fio.split()[1]}" + "\n" + f"{city}"
+                    if en_regalia:
+                        text = f"{rank} " + "\n" + f"{fio}"  + f" ({city})" + "\n" + f"{en_regalia.split('(')[0].strip()}" + "\n" + f" ({en_regalia.split('(')[1]}"
+                    else:
+                        text = f"{rank}" + "\n" + f"{fio.split()[0]} {fio.split()[1]}" + "\n" + f"{city}"
+
 
             if 31 <= len(rank) < 40:
                 if thi_name is not None:
