@@ -96,12 +96,8 @@
         // Extract the model from the popup url '.../<model>/add/' or
         // '.../<model>/<id>/change/' depending the action (add or change).
         const modelName = path.split('/')[path.split('/').length - (objId ? 4 : 3)];
-<<<<<<< HEAD
-        const selectsRelated = document.querySelectorAll(`[data-model-ref="${modelName}"] select`);
-=======
         // Exclude autocomplete selects.
         const selectsRelated = document.querySelectorAll(`[data-model-ref="${modelName}"] select:not(.admin-autocomplete)`);
->>>>>>> e1af31fc38d22477d200fde359f05f5447c38a42
 
         selectsRelated.forEach(function(select) {
             if (currentSelect === select) {

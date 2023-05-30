@@ -5,32 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc611ea2-0995-4d8f-8765-d36a49bde6ed" name="Changes" comment="2strings telegram">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/file.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/g_auth_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/g_auth_app/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/g_auth_app/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/g_auth_app/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/g_auth_app/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/g_auth_app/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/g_auth_app/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-04-04 11:51:55.582318.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/helios.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/regalii/helios.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/importer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/management/commands/generate.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/management/commands/generate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/templates/regalii_app/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/templates/regalii_app/form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/uploader.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/uploader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/regalii_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/regalii_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/tgbot/bot_kb.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tgbot/bot_kb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-14 17:43:17.387002.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-14 17:44:56.693959.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-14 20:25:02.989521.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-14 20:25:19.486094.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-15 06:59:28.881190.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-15 07:02:24.363523.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-15 07:05:18.726086.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-15 07:09:08.902284.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-15 15:58:53.112615.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 05:25:12.474888.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 05:27:03.339967.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 05:30:44.894380.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 05:33:05.326239.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 05:53:19.840525.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 05:53:22.931234.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 08:16:04.636908.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 08:47:20.196140.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 08:48:01.521671.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 08:48:53.057541.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 08:53:40.213347.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-16 08:54:03.905795.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 06:01:00.590818.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 06:12:22.261253.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 06:27:58.866832.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 06:55:27.204119.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 07:03:36.624180.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 07:33:06.822156.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 07:34:40.495219.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 07:35:00.500891.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 07:53:47.150835.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 07:54:03.314252.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 07:54:26.999275.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 10:55:47.106717.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 10:56:17.949673.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 11:59:37.565715.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 12:00:01.069662.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 12:00:28.028514.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 12:01:33.450479.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 12:01:54.333723.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 12:02:18.873425.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 14:17:40.032125.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 14:22:13.668454.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 14:22:40.245008.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 14:23:51.470828.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 14:26:48.846699.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 14:29:18.530631.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 18:25:20.332561.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-17 18:47:20.276620.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-22 07:37:30.453641.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/regalii_app/generated/regalii_2023-02-22 07:38:23.188249.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nohup.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.de5309ac06dd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.de5309ac06dd.js.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/tgbot/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/tgbot/handlers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/regalii/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/regalii/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regalii/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/regalii/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/token.json" beforeDir="false" afterPath="$PROJECT_DIR$/token.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,21 +92,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/aleksejtihonov/Desktop/SP/regalii/new_backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.project&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "/Users/aleksejtihonov/Desktop/SP/regalii/new_backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.project",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />

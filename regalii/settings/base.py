@@ -120,3 +120,4 @@ TG_BOT_TOKEN = config['BOT_TOKEN']
 #  CORS SETTINGS
 CORS_ORIGIN_ALLOW_ALL = True
 
+DOMAIN_URL = 'http://134-0-113-174.cloudvps.regruhosting.ru:8000/'
