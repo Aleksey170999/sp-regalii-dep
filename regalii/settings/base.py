@@ -22,7 +22,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'apps.regalii_app.apps.RegaliiAppConfig',
-    'apps.g_auth_app.apps.GAuthAppConfig',
 
     'rest_framework',
     'corsheaders',
@@ -104,8 +103,12 @@ GOOGLE_CREDENTIALS_FILE = BASE_DIR / 'credentials.json'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = BASE_DIR / "media"
+REGALII_DIR = MEDIA_ROOT.joinpath('generated/')
+ARCHIVES_DIR = MEDIA_ROOT.joinpath('archives/')
+
 MEDIA_URL = '/media/'
 # YANDEX_CLOUD SETTINGS
+BUCKET_TOKEN = "y0_AgAEA7qjUHgGAAhZ6QAAAADNATw2n8iJTX33SO2FvJTPUxH2Ce4ajtM"
 AWS_ACCESS_KEY_ID = config['AWS_ACCESS_KEY_ID']
 AWS_SECRET_ACCESS_KEY = config['AWS_SECRET_ACCESS_KEY']
 SERVICE_NAME = config['SERVICE_NAME']
@@ -116,3 +119,4 @@ TG_BOT_TOKEN = config['BOT_TOKEN']
 
 #  CORS SETTINGS
 CORS_ORIGIN_ALLOW_ALL = True
+

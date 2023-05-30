@@ -1,11 +1,9 @@
 from datetime import datetime
 import yadisk
-import yadisk.functions
-
+from django.conf import settings
 
 class UploadRegalii():
-    TOKEN = "y0_AgAEA7qjUHgGAAhZ6QAAAADNATw2n8iJTX33SO2FvJTPUxH2Ce4ajtM"
-    y = yadisk.YaDisk(token=TOKEN)
+    y = yadisk.YaDisk(token=settings.BUCKET_TOKEN)
 
     def __init__(self):
         pass
@@ -18,5 +16,3 @@ class UploadRegalii():
         except yadisk.exceptions.PathExistsError:
             pass
         print("\nАрхив загружен на яндек диск:")
-
-

@@ -6,7 +6,12 @@ from apps.regalii_app.models import Regalia
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        generator = RegaliaGenerator(qs=Regalia.objects.all())
-        generator.generate_all()
-        archname = generator.save_to_archive()
+        qs = Regalia.objects.filter(is_generated=False)
+        if qs:
+            generator = RegaliaGenerator(qs=qs)
+            generator.generate_all()
+            archname = generator.save_to_archive()
+            print(generator.get_url_to_archive(archname))
+        else:
+            print('В базе нет записей для генерации регалий')
 

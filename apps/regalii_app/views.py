@@ -12,7 +12,8 @@ from .generator import RegaliaGenerator
 @api_view(['POST'])
 def genreg(request):
     if not request.FILES:
-        ins = request.data
+        ins = [request.data['fio'], request.data['city'], request.data['regalia']]
+
         importer = RegaliaImporter(ins)
         ins = importer.import_one_object()
         generator = RegaliaGenerator()
@@ -20,7 +21,6 @@ def genreg(request):
         archname = generator.save_to_archive()
         url = generator.get_url_to_archive(archname)
         return Response({"url": url})
-
     else:
         importer = RegaliaImporter(file=request.FILES['file'])
         qs = importer.import_from_excel()
