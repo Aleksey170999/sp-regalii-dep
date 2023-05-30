@@ -6,11 +6,10 @@ from aiogram.dispatcher import FSMContext
 
 from bot_states import BotState
 from bot_kb import greet_kb, to_start_kb
-from bot_cfg import bot
-from django.conf import settings
+from bot_cfg import bot, DOMAIN_URL
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DOMAIN_URL = settings.DOMAIN_URL
 
 
 async def start_command(message: types.Message):
